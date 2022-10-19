@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color1: #313540;
+    --color2: #657BA6;
+    --color3: #0C0D04;
+    --color4: #F2D7B6;
+    --color5: #F2F2F2;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 10vh;
+    align-items: center;
+    z-index: 100;
+    background-color: var(--color3);
+    color: var(--color5);
+}
+
+.nav__bar--icon p{
+    font-size: xx-large;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav__bar--items{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.nav__bar--items__user {
+    display: none;
+}
+
+.nav__bar--items__client {
+    display: none;
+}
+
+    .nav__bar--items__style a{
+        cursor: pointer;
+        font-size: large;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+    }
+    .nav__bar--items__style a:hover {
+        color: rgb(164, 161, 161);
+    }
+
+.nav--content {
+    width: 100%;
+    height: 10vh;
+}
+
+.img__container{
+    width: 100%;
+    background: url(../img/Motos.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 600px;
+}
+
+.motorbyke__container--buttons ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 30px;
+    background-color: var(--color1);
+    color: var(--color5);
+    font-size: larger;
+    font-weight: 400;
+}
+
+    .motorbyke__container--buttons__style {
+        cursor: pointer;
+    }
+
+    .motorbyke__container--buttons__style:hover {
+        color: rgb(164, 161, 161);
+    }
+
+    .motorbyke__container--buttons::after{
+        content: "";
+        height: 1px;
+        background-color: var(--color4);
+        display: block;
+    }
+
+.motorbyke__container--elements {
+    display: flex;
+    padding: 50px 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--color1);
+}
+
+.motorbyke__container--elements__style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 28%;
+    color: white;
+    background: var(--color3);
+    padding: 16px;
+    text-align: center;
+    gap: 8px;
+    border-radius: 8px;
+    margin-bottom: 34px;
+    box-shadow: #191916 8px 6px 8px;
+    cursor: pointer;
+    transition: .3s ease all;
+    user-select: none;
+}
+
+    .motorbyke_container--elements__style--btn{
+        background: var(--color5);
+        color: var(--color1);
+        border-radius: 2px;
+        font-size: large;
+    }
+
+.motorbyke__container--elements__style:hover{
+    /* background: rgb(22, 22, 22); */
+    background: var(--color2);
+    transform: scale(1.04) translateY(-10px);
+}
+
+    .motorbyke__container--elements__style:hover > .motorbyke_container--elements__style--btn{
+        background: var(--color1);
+        color: var(--color5);
+
+    }
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    visibility: hidden;
+
+}
+
+.sing_up {
+    background-color: var(--color4);
+    padding: 20px 16px;
+    border-radius: 4px;
+    color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+
+    transition: .3s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.sing_up p:nth-child(2){
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.sing_up p:nth-child(3){
+    font-size: large;
+    font-weight: 400;
+    background-color: var(--color1);
+    padding: 8px 16px;
+    color: var(--color5);
+    font-weight: 400;
+    margin: 8px 0 6px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sing_up p:nth-child(3):hover{
+    background-color: #191916;
+}
+
+.sing_up p:nth-child(4){
+    font-size: larger;
+    font-weight: 100;
+
+}
+
+.form__reservation{
+    background-color: var(--color4);
+    padding: 20px 16px;
+    border-radius: 4px;
+    color: var(--color3);
+    visibility: hidden;
+
+    transition: .3s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.exit__btn {
+       display: block; 
+       text-align: end;
+       width: 100%;
+}
+
+.exit__btn i {
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.exit__btn i:hover {
+    color: red;
+}
+
+.reservation__span input {
+    padding: 8px;
+    font-size: large;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    width: 20vw;
+    margin: 8px 8px 16px 8px;
+}
+
+.reservation__span p{
+    font-size: larger;
+    font-weight: 700;
+}
+
+.overlay--active{
+    visibility: visible;
+}
+
+.sing_up--active{
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+
+.form__reservation--active{
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+
+.sing_up--desactive{
+    display: none;
+}
+
+.form__reservation--desactive{
+    display: none;
+}
+

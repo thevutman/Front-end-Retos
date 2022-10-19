@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 3</title>
+    <script src="https://kit.fontawesome.com/a9f694e572.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <div class="form__reservation" id="form__reservation">
+            <div class="exit__btn"><i onclick="closedOverlay(1)" class="fa-solid fa-xmark"></i></div>
+            <form action="reservation">
+                <span class="reservation__span">
+                    <p>Cliente</p>
+                    <input type="text" value="Cliente_1">
+                </span>
+                <span class="reservation__span">
+                    <p>Fecha de Inicio</p>
+                    <input type="date" value="">
+                </span>
+                <span class="reservation__span">
+                    <p>Fecha de Entrega</p>
+                    <input type="date" value="">
+                </span>
+            </form>
+        </div>
+        <div class="sing_up" id="sing_up">
+            <div class="exit__btn"><i onclick="closedOverlay(1)" class="fa-solid fa-xmark"></i></div>
+            <p>Inicia Sesion Primero</p>
+            <p>Sing-in</p>
+            <p>no tienes cuenta, crear una <a href="https://thevutman.github.io">aqui</a></p>
+        </div>
+    </div>
+    <nav>
+        <div class="nav__bar--icon">
+            <p>Reto 3</p>
+        </div>
+        <ul id="nav__bar--items__user" class="nav__bar--items">
+            <li class="nav__bar--items__style"><a href="#">Sing-in</a></li>
+            <li class="nav__bar--items__style"><a href="./sing_in.html">Sing-up</a></li>
+        </ul>
+        <ul id="nav__bar--items__client" class="nav__bar--items">
+            <li class="nav__bar--items__style">Account</li>
+        </ul>
+    </nav>
+    <div class="nav--content"></div>
+    <div class="main--container">
+        <div class="img__container">
+        </div>
+        <div class="motorByke__conatiner">
+            <div class="motorbyke__container--buttons">
+                <ul>
+                    <li class="motorbyke__container--buttons__style">Todas</li>
+                    <li class="motorbyke__container--buttons__style">Category_1</li>
+                </ul>
+            </div>
+            <div class="motorbyke__container--elements">
+                <div class="motorbyke__container--elements__style">
+                    <p>nombre</p>
+                    <p>marca</p>
+                    <p>año</p>
+                    <p>descripcion Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quidem!</p>
+                    <p>categoria</p>
+                    <p class="motorbyke_container--elements__style--btn">
+                        Reservar
+                    </p>
+
+                </div>
+                <div class="motorbyke__container--elements__style">
+                    <p>nombre</p>
+                    <p>marca</p>
+                    <p>año</p>
+                    <p>descripcion Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quidem!</p>
+                    <p>categoria</p>
+                    <p class="motorbyke_container--elements__style--btn">Reservar</p>
+
+                </div>
+                <div class="motorbyke__container--elements__style">
+                    <p>nombre</p>
+                    <p>marca</p>
+                    <p>año</p>
+                    <p>descripcion Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quidem!</p>
+                    <p>categoria</p>
+                    <p class="motorbyke_container--elements__style--btn">
+                        Reservar
+                    </p>
+
+                </div>
+                <div class="motorbyke__container--elements__style" onclick="lol(), loll(1)">
+                    <p>nombre</p>
+                    <p>marca</p>
+                    <p>año</p>
+                    <p>descripcion Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quidem!</p>
+                    <p>categoria</p>
+                    <p class="motorbyke_container--elements__style--btn">
+                        Reservar
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
