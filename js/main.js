@@ -1,5 +1,5 @@
 function lol(){
-    if (userrr('lol','lol')==true){
+    if (userrr('lo','lo')==true){
         console.log(1)
         let overlay = document.getElementById('overlay'),
             form = document.getElementById('form__reservation'),

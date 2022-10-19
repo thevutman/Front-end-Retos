@@ -1,5 +1,94 @@
-*{
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+}
+
+:root{
+    --color1: #313540;
+    --color2: #657BA6;
+    --color3: #0C0D04;
+    --color4: #F2D7B6;
+    --color5: #F2F2F2;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color3);
+    color: white;
+}
+
+.container {
+    background: var(--color1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+p {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding: 6px 0 4px 0;
+    font-size: larger;
+    font-weight: 500;
+}
+
+input {
+    background: var(--color2);
+    border-style: none;
+    padding: 4px;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: 300;
+    color: white;
+    border: var(--color2) solid 2px;
+}
+
+input:focus-visible {
+    outline: none;
+    border: var(--color4) solid 2px;
+}
+
+.sing-up p {
+    font-size: large;
+    font-weight: 300;
+    text-align: center;
+    margin: 16px 0 8px 0;
+}
+
+p a {
+    color: red;
+}
+
+p a:active {
+    color: white
+}
+
+
+.button a {
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 500;
+    background: var(--color4);
+    padding: 6px;
+    border-radius: 4px;
 }
